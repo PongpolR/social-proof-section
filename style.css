@@ -1,0 +1,60 @@
+@media all {
+  body {
+    background-color: white;
+    font-family: 'League Spartan', sans-serif;
+  }
+
+  main {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  header {
+    margin-right: -15rem;
+  }
+
+  header h1 {
+    width: 30%;
+    text-align: c;
+  }
+
+  header p {
+    width: 43%;
+  }
+
+  .bg-top {
+    position: absolute;
+    top: 0;
+  }
+
+  .bg-bot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  aside div {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: hsl(300, 24%, 96%);
+  }
+
+  footer {
+    display: flex;
+  }
+
+  footer div {
+    margin: 0 2rem;
+    margin-top: 4rem;
+  }
+
+  footer div:first-child {
+    margin-left: 11rem;
+  }
+}
