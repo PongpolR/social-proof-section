@@ -44,20 +44,52 @@
   }
 
   aside div {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
     margin-top: 1rem;
     padding: 1rem;
+    padding-left: 5rem;
     background-color: hsl(300, 24%, 96%);
+    border-radius: 15px;
+  }
+
+  .rated {
+    display: flex;
+  }
+
+  .rated-text {
+    text-align: center;
+  }
+
+  .star {
+    background: url(images/icon-star.svg),
+                url(images/icon-star.svg),
+                url(images/icon-star.svg),
+                url(images/icon-star.svg),
+                url(images/icon-star.svg);
+    background-repeat: no-repeat, 
+                   no-repeat,
+                   no-repeat,
+                   no-repeat,
+                   no-repeat;
+    background-position: 0px top, 
+                     20px top,
+                     40px top,
+                     60px top,
+                     80px top;
   }
 
   footer {
     display: flex;
     font-size: 15px;
     margin-top: 4rem;
-    margin-left: 10rem;
+    /* margin-left: 10rem; */
+    justify-content: center;
   }
 
   .comment {
     background: hsl(300, 43%, 22%);
+    width: 270px;
     padding: 3rem 1.5rem;
     margin: 0 2rem;
     border-radius: 10px;
@@ -98,9 +130,10 @@
     font-size: 15px;
     font-weight: 500;
     line-height: 1.3;
+    padding: 0 auto;
   }
 
-  /* footer div:first-child {
-    margin-left: 11rem;
-  } */
+  .comment:nth-child(2) .comment-text {
+    width: 250px;
+  }
 }
