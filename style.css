@@ -90,8 +90,9 @@
   .comment {
     background: hsl(300, 43%, 22%);
     width: 270px;
-    padding: 3rem 1.5rem;
-    margin: 0 2rem;
+    height: 130px;
+    padding: 2.5rem 1.5rem;
+    margin: 0 1rem;
     border-radius: 10px;
   }
 
@@ -135,5 +136,13 @@
 
   .comment:nth-child(2) .comment-text {
     width: 250px;
+  }
+
+  .comment:nth-child(2) {
+    margin-top: 1.5rem;
+  }
+
+  .comment:nth-child(3) {
+    margin-top: 3rem;
   }
 }
