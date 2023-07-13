@@ -1,88 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-    <title>Frontend Mentor | Social proof section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
 
-  </head>
-  <body>
-    <img src="images/bg-pattern-top-desktop.svg" class="bg-top" alt="bg-top">
-    <img src="images/bg-pattern-bottom-desktop.svg" class="bg-bot" alt="bg-bot">
+  <title>Frontend Mentor | Social proof section</title>
 
-    <main>
-      <header>
-        <h1>10,000+ of our users love our products.</h1>
-        <p>We only provide great products combined with excellent customer service.
-          See what our satisfied customers are saying about our services.</p>
-      </header>
-      <aside>
-        <div class="rated">
-          <div class="star"></div>
-          <div class="rated-text">Rated 5 Stars in Reviews</div>
-        </div>
-        <div>Rated 5 Stars in Report Guru</div>
-        <div>Rated 5 Stars in BestTech</div>
-      </aside>
-    </main>
-    
-    <footer>
-      <div class="comment">
-        <div class="comment-header">
-          <img src="images/image-colton.jpg" alt="colton" class="img-profile">
-          <div class="header-text">
-            <div class="name">Colton Smith</div>
-            <div class="subtitle">Verified Buyer</div>
-          </div>
-        </div>
-        <div class="comment-text">   
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
+</head>
+
+<body>
+  <img src="images/bg-pattern-top-desktop.svg" class="bg-top" alt="bg-top">
+  <img src="images/bg-pattern-bottom-desktop.svg" class="bg-bot" alt="bg-bot">
+
+  <main>
+    <header>
+      <h1>10,000+ of our users love our products.</h1>
+      <p>We only provide great products combined with excellent customer service.
+        See what our satisfied customers are saying about our services.</p>
+    </header>
+    <aside>
+      <div class="rated">
+        <div class="rated-text">
+          <div id="list1"><img id="item1" src="images/icon-star.svg"></div>
+
+          <script type="text/javascript">
+            function cloneItem() {
+              var item = document.getElementById("item1");
+              var list = document.getElementById("list1");
+              var clonedItem = item.cloneNode(true);
+              list.appendChild(clonedItem);
+            }
+
+            for (var i = 1; i < 5; i++) {
+              cloneItem();
+            }
+          </script>
+          <p>Rated 5 Stars in Reviews</p>
         </div>
       </div>
-      <div class="comment">
-        <div class="comment-header">
-          <img src="images/image-irene.jpg" alt="irene" class="img-profile">
-          <div class="header-text">
-            <div class="name">Irene Roberts</div>
-            <div class="subtitle">Verified Buyer</div>
-          </div>
-        </div>
-        <div class="comment-text">
-          "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-        </div>
-    
-      </div>
-      <div class="comment">
-        <div class="comment-header">
-          <img src="images/image-anne.jpg" alt="anne" class="img-profile">
-          <div class="header-text">
-            <div class="name">Anne Wallace</div>
-            <div class="subtitle">Verified Buyer</div>
-          </div>
-        </div>
-        <div class="comment-text">
-          "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+      <div class="rated">
+        <div class="rated-text">
+          <div id="list2"><img id="item2" src="images/icon-star.svg"></div>
+
+          <script type="text/javascript">
+            function cloneItem() {
+              var item = document.getElementById("item2");
+              var list = document.getElementById("list2");
+              var clonedItem = item.cloneNode(true);
+              list.appendChild(clonedItem);
+            }
+
+            for (var i = 1; i < 5; i++) {
+              cloneItem();
+            }
+          </script>
+          <p>Rated 5 Stars in Report Guru</p>
         </div>
       </div>
-    </footer>
-     
-  </body>
+      <div class="rated">
+        <div class="rated-text">
+          <div id="list3"><img id="item3" src="images/icon-star.svg"></div>
+
+          <script type="text/javascript">
+            function cloneItem() {
+              var item = document.getElementById("item3");
+              var list = document.getElementById("list3");
+              var clonedItem = item.cloneNode(true);
+              list.appendChild(clonedItem);
+            }
+
+            for (var i = 1; i < 5; i++) {
+              cloneItem();
+            }
+          </script>
+          <p>Rated 5 Stars in BestTech</p>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="comment">
+      <div class="comment-header">
+        <img src="images/image-colton.jpg" alt="colton" class="img-profile">
+        <div class="header-text">
+          <div class="name">Colton Smith</div>
+          <div class="subtitle">Verified Buyer</div>
+        </div>
+      </div>
+      <div class="comment-text">
+        "We needed the same printed design as the one we had ordered a week prior.
+        Not only did they find the original order, but we also received it in time.
+        Excellent!"
+      </div>
+    </div>
+    <div class="comment">
+      <div class="comment-header">
+        <img src="images/image-irene.jpg" alt="irene" class="img-profile">
+        <div class="header-text">
+          <div class="name">Irene Roberts</div>
+          <div class="subtitle">Verified Buyer</div>
+        </div>
+      </div>
+      <div class="comment-text">
+        "Customer service is always excellent and very quick turn around. Completely
+        delighted with the simplicity of the purchase and the speed of delivery."
+      </div>
+
+    </div>
+    <div class="comment">
+      <div class="comment-header">
+        <img src="images/image-anne.jpg" alt="anne" class="img-profile">
+        <div class="header-text">
+          <div class="name">Anne Wallace</div>
+          <div class="subtitle">Verified Buyer</div>
+        </div>
+      </div>
+      <div class="comment-text">
+        "Put an order with this company and can only praise them for the very high
+        standard. Will definitely use them again and recommend them to everyone!"
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>

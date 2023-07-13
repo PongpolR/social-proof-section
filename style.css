@@ -1,4 +1,4 @@
-@media all {
+@media (min-width: 376px) {
   body {
     background-color: white;
     font-family: 'League Spartan', sans-serif;
@@ -11,19 +11,19 @@
   }
 
   header {
-    margin-right: -13rem;
+    margin-left: 13rem;
   }
 
   header h1 {
     color: hsl(300, 43%, 22%);
-    width: 35%;
+    width: 55%;
   }
 
   header p {
     color: hsl(303, 10%, 53%);
     font-size: 15px;
     font-weight: 500;
-    width: 43%;
+    width: 63%;
     line-height: 1.2;
   }
 
@@ -43,47 +43,76 @@
     font-weight: 700;
   }
 
-  aside div {
+  aside {
+    margin-top: 3rem;
+    margin-right: 13rem;
+  }
+
+  aside .rated-text {
+    display: flex;
+    width: 300px;
+    font-size: 15px;
     color: hsl(300, 43%, 22%);
     font-weight: 700;
     margin-top: 1rem;
-    padding: 1rem;
-    padding-left: 5rem;
+    padding: 0rem 3rem;
+    padding-left: 3.5rem;
     background-color: hsl(300, 24%, 96%);
-    border-radius: 15px;
+    border-radius: 10px;
+    justify-content: center;
+  }
+
+  div.rated:nth-child(1) {
+    margin-left: -1rem;
+  }
+
+  div.rated:nth-child(2) {
+    margin-left: 1rem;
+  }
+
+  div.rated:last-child {
+    margin-left: 3rem;
+  }
+
+  aside .rated-text #list1,
+  aside .rated-text #list2,
+  aside .rated-text #list3 {
+    margin-left: -2rem;
+    margin-top: 0.7rem;
+    width: 200px;
+  }
+
+  aside .rated-text #list1 img,
+  aside .rated-text #list2 img,
+  aside .rated-text #list3 img{
+    margin-left: -0.2rem;
+    margin-right: 0.5rem;
+  }
+
+  aside .rated-text #list1 img:nth-child(1),
+  aside .rated-text #list2 img:nth-child(1),
+  aside .rated-text #list3 img:nth-child(1){
+    padding-left: 0.5rem;
+  }
+
+  aside .star {
+    background: url(images/icon-star.svg);
+    background-position: right top;
   }
 
   .rated {
     display: flex;
   }
 
-  .rated-text {
-    text-align: center;
-  }
-
-  .star {
-    background: url(images/icon-star.svg),
-                url(images/icon-star.svg),
-                url(images/icon-star.svg),
-                url(images/icon-star.svg),
-                url(images/icon-star.svg);
-    background-repeat: no-repeat, 
-                   no-repeat,
-                   no-repeat,
-                   no-repeat,
-                   no-repeat;
-    background-position: 0px top, 
-                     20px top,
-                     40px top,
-                     60px top,
-                     80px top;
+  .rated-text p {
+    margin-left: -0.5rem;
+    width: 100%;
   }
 
   footer {
     display: flex;
     font-size: 15px;
     margin-top: 4rem;
-    /* margin-left: 10rem; */
     justify-content: center;
   }
 
