@@ -1,7 +1,11 @@
 @media (min-width: 376px) {
   body {
     background-color: white;
+    background: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, bottom right;
     font-family: 'League Spartan', sans-serif;
+    min-height: 90vh;
   }
 
   main {
@@ -16,7 +20,7 @@
 
   header h1 {
     color: hsl(300, 43%, 22%);
-    width: 55%;
+    width: 65%;
   }
 
   header p {
@@ -28,18 +32,20 @@
   }
 
   .bg-top {
+    opacity: 0.8;
     position: absolute;
     top: 0;
   }
 
   .bg-bot {
+    opacity: 0.8;
     position: absolute;
     bottom: 0;
     right: 0;
   }
 
   h1 {
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 700;
   }
 
@@ -51,7 +57,7 @@
   aside .rated-text {
     display: flex;
     width: 300px;
-    font-size: 15px;
+    font-size: 16px;
     color: hsl(300, 43%, 22%);
     font-weight: 700;
     margin-top: 1rem;
@@ -78,7 +84,7 @@
   aside .rated-text #list2,
   aside .rated-text #list3 {
     margin-left: -2rem;
-    margin-top: 0.7rem;
+    margin-top: 0.8rem;
     width: 200px;
   }
 
